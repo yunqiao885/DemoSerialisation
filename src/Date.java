@@ -1,9 +1,14 @@
-public class Date {
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+
+
+@XmlRootElement
+public class Date implements Serializable {
     private int jour;
     private int mois;
     private int annee;
 
-    public Date(){
+    public Date() {
 
     }
     public Date(int jour, int mois, int annee) {

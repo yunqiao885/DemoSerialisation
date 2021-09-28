@@ -1,5 +1,6 @@
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
 
 @XmlRootElement(name = "etudiant")
@@ -10,15 +11,15 @@ public class Personne implements Serializable {
     private String prenom;
     private Date dateNaissance;
 
-    public Personne(){
-
-    }
     public Personne(String nom, String prenom, Date dateNaissance) {
         this.nom = nom;
         this.prenom = prenom;
         this.dateNaissance = dateNaissance;
     }
-    @XmlAttribute
+
+    public Personne() {
+    }
+
     public String getNom() {
         return nom;
     }
@@ -34,7 +35,7 @@ public class Personne implements Serializable {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-
+@XmlTransient
     public Date getDateNaissance() {
         return dateNaissance;
     }

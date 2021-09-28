@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<etudiant nom="Cipriani">
-    <dateNaissance>
-        <annee>2001</annee>
-        <jour>1</jour>
-        <mois>1</mois>
-    </dateNaissance>
+<etudiant>
+    <nom>Cipriani</nom>
     <prenom>Mael</prenom>
 </etudiant>
